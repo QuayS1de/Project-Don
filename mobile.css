@@ -1,0 +1,279 @@
+/*
+.container{
+    width: 100%;
+}
+
+.bgimage{
+    background-clip: content-box;
+    width:100vw;
+    object-fit: cover;
+}
+
+.bgimage2{
+    width:100vw;
+    object-fit: cover;
+}
+
+
+.pre-section1_1 h1{
+    display: flex;
+    max-width: 90%;
+}
+
+.pre-section1_1 p{
+    display: flex;
+    max-width: 80%;
+    flex-wrap: wrap;
+}
+*/
+
+.section1{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.pre-section1 h1{
+    width: 60%;
+}
+
+.pic1{
+    transform: translate(10%, -110%);
+}
+
+.pic2{
+    transform: translate(10%, -37%);
+    z-index: 3;
+}
+
+.pic3{
+    transform: translate(10%, 27%);
+    z-index: 3;
+}
+
+.pre-section2{
+    padding-right: 60px;
+}
+
+.pre-section3{
+    padding-left: 60px;
+}
+
+.pic4{
+    transform: translate(10%, -130%);
+    z-index: 4;
+}
+
+.pic5{
+    transform: translate(10%, -57%);
+    z-index: 3;
+}
+
+.pic6{
+    transform: translate(10%, 17%);
+    z-index: 2;
+}
+
+
+
+
+
+
+/*Burger Menu*/
+
+
+@media(max-width:830px){
+    .sidebar{
+        display: block;
+    }
+    
+    .section1{
+        margin: 0;
+    }
+    
+    .pre-section1 p{
+        max-width: 600px;
+    }
+    
+    .sidebar-dws{
+        display: flex;
+        position: relative;
+        position: fixed;
+        width: 50%;
+        height: 100%;
+/*        background-color: #bfbfbf;*/
+        background-image: linear-gradient(to right bottom, #3d3000, #392107, #2d160d, #1c0d0c, #000000);
+    }
+
+    .sidebar{
+        top: 0;
+        right: 0;
+        width: 50%;
+        z-index: 1999;
+
+    }
+
+    .sidebar-dws ul{
+        transition: 1s;
+        width: 100%;
+        padding: 0;
+    }
+
+    .sidebar-dws ul li{
+        padding: 10px;
+        list-style: none;
+        text-decoration: none;
+        border-bottom: 1px solid black;
+        color: white;
+        text-align: center;
+    }
+
+    .sidebar-dws ul li a{
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 2px;
+        opacity: 0.9;
+    }
+
+    .sidebar-dws ul li:not(:first-child):hover{
+        background-color: #c1c1c1;
+    }
+
+    .sidebar-dws ul li:hover a{
+        color: #141414;          
+    }
+
+    .sidebar-dws ul li:first-child{
+        text-align: center;
+        margin-bottom: 15px;
+        border-bottom: none;
+        font-size: 24px;
+        letter-spacing: 6px
+    }
+
+    .sidebar{
+        position: fixed;
+    }
+
+    .button-add2{
+        position: absolute;
+        right: 10px;
+        top: 21px;
+        margin-left: 10px;
+        font-size: 30px;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+        
+    }
+
+    .button-add{
+        position: absolute;
+        right: 100%;
+        top: 21px;
+        font-size: 30px;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+/*        -webkit-text-stroke: 0.5px #d8d8d8;*/
+        background-color: #3b2d02;
+        color: #fff !important;
+        padding: 5px;
+    }
+    
+    .btn-switch-display{
+        display: none;
+    }
+
+    .btn-switch-color{
+        color: black;
+    }
+
+    .sidebar-dws i:active{
+        font-size: 28px;
+    }
+
+    
+    .header{
+        display: none;
+    }
+
+}
+
+
+@media(max-width:650px){
+    .pre-section1 h1{
+        font-size: 58px;
+        width: 80%;
+    }
+    
+    .pre-section1 p{
+        max-width: none;
+        height: auto;
+    }
+    
+    .pre-section4 h1{
+        max-width: 400px;
+    }
+    
+    .pre-section2-img, .pre-section3-img{
+        margin: 0;
+    }
+    
+    .pre-section2, .pre-section3{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    
+    .pic1, .pic2, .pic3, .pic4, .pic5, .pic6{
+        top:auto;
+        left: auto;
+        position: static;
+        transform: none;
+        z-index: inherit;
+        display: inline-block;
+        max-width: 32%;
+        height: auto;
+    }
+    
+    .section1{
+        width: inherit;
+        max-width: 988px;
+        margin: 0;
+        padding: 0 15px;
+    }
+    
+    .section2{
+        margin-top: 200px;
+    }
+    
+    .pre-section2-text, .pre-section3-text{
+        padding: 0 15px;
+    }
+    
+    .section3{
+        padding-top: 0;
+    }
+    
+    .section4{
+        padding-top: 200px;
+    }
+    
+}
+
+@media(max-width:410px){
+    .pre-section1 h1{
+        margin-top: 10px;
+    }
+    
+    .pre-section1 h1, .pre-section2-text h1, .pre-section3-text h1{
+        font-size: 42px;
+        width: 100%;
+    }
+
+    .pre-section2-text h1{
+        color: black;
+    }
+    
+    .pre-section2-text p{
+        padding: 5px;
+    }
+}
