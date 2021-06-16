@@ -1,6 +1,7 @@
 "use strict"
 document.addEventListener('DOMContentLoaded', function(){
-    
+        new WOW().init();
+        
     VANTA.WAVES({
       el: ".header",
     mouseControls: true,
